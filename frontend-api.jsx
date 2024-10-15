@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const apiUrl = import.meta.env.VITE_API_URL; // Use the Vite-specific syntax
+
 const api_url = axios.create({
-  baseURL: "https://todo-app-backend-production-f1f0.up.railway.app/",
+  baseURL: apiUrl,
 });
 
 // Get all tasks
