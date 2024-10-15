@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api_url = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://todo-app-backend-production-f1f0.up.railway.app/",
 });
 
 // Get all tasks
