@@ -4,6 +4,9 @@ const apiUrl = import.meta.env.VITE_API_URL; // Use the Vite-specific syntax
 
 const api_url = axios.create({
   baseURL: `${apiUrl}`,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 // Get all tasks
